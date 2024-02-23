@@ -1,24 +1,39 @@
 package co.edu.unquindio;
 
-import co.edu.unquindio.model.empleado;
+import co.edu.unquindio.model.Empleado;
+import co.edu.unquindio.model.Empresa;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
+        inicializarDatos();
+
         //listEmpleados();
     }
-//    public static void listEmpleados(){
-//        empleado empleado1 = new empleado("Juan Arias", "12222354", "Adm");
-//        empleado empleado2 = new empleado("Steven Lopez", "555566633", "Tec");
-//        empleado empleado3 = new empleado("Andres Ruiz", "99999999", "Tec");
-//        List<empleado> listEmpleado = new ArrayList<>();
-//        listEmpleado.add(empleado1);
-//        listEmpleado.add(empleado2);
-//        listEmpleado.add(empleado3);
-//        for (empleado empleados : listEmpleado) {
-//            System.out.println(empleados.getNombre());
-//        }
-//    }
+
+    private static void inicializarDatos() {
+        Empresa Empresa1 = new Empresa();
+
+        Empleado empleado1 = new Empleado();
+        empleado1.setID("1235363");
+        empleado1.setNombre("Juan");
+
+        Empleado empleado2 = new Empleado();
+        empleado2.setID("8888855");
+        empleado2.setNombre("Andres");
+
+        Empleado empleado3 = new Empleado();
+        empleado3.setID("66632254");
+        empleado3.setNombre("steven");
+
+        System.out.println(empleado3.getNombre());
+
+        Empresa1.getListEmpleado().add(empleado1);
+
+        System.out.println(Empresa1.getListEmpleado());
+
+    }
 }

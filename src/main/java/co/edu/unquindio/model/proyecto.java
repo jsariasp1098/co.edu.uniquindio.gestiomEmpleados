@@ -1,14 +1,14 @@
 package co.edu.unquindio.model;
 
-public class proyecto {
+public class Proyecto {
     private String nombre;
     private String codigoProyecto;
     private String empladoAsignado;
 
-    public proyecto() {
+    public Proyecto() {
     }
 
-    public proyecto(String nombre, String codigoProyecto, String empladoAsignado) {
+    public Proyecto(String nombre, String codigoProyecto, String empladoAsignado) {
         this.nombre = nombre;
         this.codigoProyecto = codigoProyecto;
         this.empladoAsignado = empladoAsignado;

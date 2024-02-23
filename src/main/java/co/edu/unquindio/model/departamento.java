@@ -2,22 +2,22 @@ package co.edu.unquindio.model;
 
 import java.util.List;
 
-public class departamento {
+public class Departamento {
     private String nombre;
     private String codigo;
-    List<empleado> listEmpleado;
-    public departamento() {
+    List<Empleado> listEmpleado;
+    public Departamento() {
     }
-    public departamento(String nombre, String codigo, empleado listEmpleado) {
+    public Departamento(String nombre, String codigo, Empleado listEmpleado) {
         this.nombre = nombre;
         this.codigo = codigo;
-        this.listEmpleado = (List<empleado>) listEmpleado;
+        this.listEmpleado = (List<Empleado>) listEmpleado;
     }
 
-    public void setListEmpleado(List<empleado> listEmpleado) {
+    public void setListEmpleado(List<Empleado> listEmpleado) {
         this.listEmpleado = listEmpleado;
     }
-    public List<empleado> getListEmpleado() {
+    public List<Empleado> getListEmpleado() {
         return listEmpleado;
     }
     public String getNombre() {

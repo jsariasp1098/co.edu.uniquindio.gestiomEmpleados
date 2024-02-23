@@ -1,11 +1,11 @@
 package co.edu.unquindio.model;
 
-public class gerente extends empleado implements Icontribuyente, IgestionProyectos, IgestionEquipos{
+public class Gerente extends Empleado implements Icontribuyente, IgestionProyectos, IgestionEquipos{
     private String idProyecto;
     private String equipoEmpleado;
 
-    public gerente(String nombre, String ID, String departamento, String idProyecto, String equipoEmpleado) {
-        super(nombre, ID, departamento);
+    public Gerente(String nombre, String ID, Departamento idDepartamento, String idProyecto, String equipoEmpleado) {
+        super(nombre, ID, idDepartamento);
         this.idProyecto = idProyecto;
         this.equipoEmpleado = equipoEmpleado;
     }

@@ -1,19 +1,24 @@
 package co.edu.unquindio.model;
 
-public class empleado {
+public class Empleado {
     private String nombre;
     private String ID;
-    private departamento idDepartamento;
-    public empleado(String nombre, String ID, String departamento) {
-    }
-    public empleado(String nombre, String ID, departamento idDepartamento) {
+    Departamento idDepartamento;
+
+    public Empleado(String nombre, String ID, Departamento idDepartamento) {
         this.nombre = nombre;
         this.ID = ID;
         this.idDepartamento = idDepartamento;
     }
+
+    public Empleado() {
+
+    }
+
     public String getNombre() {
         return nombre;
     }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -23,10 +28,10 @@ public class empleado {
     public void setID(String ID) {
         this.ID = ID;
     }
-    public departamento getIdDepartamento() {
+    public Departamento getIdDepartamento() {
         return idDepartamento;
     }
-    public void setIdDepartamento(departamento idDepartamento) {
+    public void setIdDepartamento(Departamento idDepartamento) {
         this.idDepartamento = idDepartamento;
     }
 }
