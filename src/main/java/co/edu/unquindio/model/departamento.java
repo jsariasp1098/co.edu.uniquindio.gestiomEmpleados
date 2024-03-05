@@ -1,11 +1,12 @@
 package co.edu.unquindio.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Departamento {
     private String nombre;
     private String codigo;
-    List<Empleado> listEmpleado;
+    private List<Empleado> listEmpleado  = new ArrayList<>();
     public Departamento() {
     }
     public Departamento(String nombre, String codigo, Empleado listEmpleado) {
